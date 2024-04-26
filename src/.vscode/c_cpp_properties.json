@@ -1,0 +1,26 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/fabianfossbudal/repos/master-thesis-mono-repo/tello-ros2-driver/workspace/install/tello_msg/include/**",
+        "/home/fabianfossbudal/repos/Drone-Control-Center/ros2_ws/install/image_geometry/include/**",
+        "/home/fabianfossbudal/repos/Drone-Control-Center/ros2_ws/install/cv_bridge/include/**",
+        "/home/fabianfossbudal/repos/Drone-Control-Center/tello-ros2/workspace/install/tello_msg/include/**",
+        "/home/fabianfossbudal/repos/tello-ros2/workspace/install/tello_msg/include/**",
+        "/home/fabianfossbudal/repos/project-amado/tello-ros2/workspace/install/tello_msg/include/**",
+        "/opt/ros/humble/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

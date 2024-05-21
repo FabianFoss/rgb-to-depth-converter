@@ -11,7 +11,7 @@ from MiDaS.midas.model_loader import load_model
 
 class DepthEstimator(Node):
     def __init__(self):
-        super().__init__('depth_estimator')
+        super().__init__('midas_depth_estimate')
         self.publisher_ = self.create_publisher(Image, 'depth', 10)
         self.subscription = self.create_subscription(
             Image,

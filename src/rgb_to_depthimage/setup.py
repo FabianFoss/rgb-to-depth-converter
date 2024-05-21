@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'rgb_to_depth'
+package_name = 'rgb_to_depthimage'
 
 setup(
     name=package_name,
@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'rgb_to_depth = rgb_to_depth.node:main'
+            'distdepth = rgb_to_depthimage.distdepth:main'
         ],
     },
 )

@@ -15,6 +15,16 @@ from packnet_sfm.utils.depth import inv2depth
 
 from packnet_sfm.utils.types import is_seq, is_tensor
 
+"""
+NOTE: This requires cuda
+
+NOTE: 
+This code tries to convert this: https://github.com/surfii3z/packnet_sfm_ros/blob/master/ros/packnet_sfm_node 
+From ros1 to ros2
+
+NOTE: This code is partially generated using ChatGPT
+"""
+
 STEREO_SCALE_FACTOR = 1
 MODEL_NAME = "PackNet01_HR_velsup_CStoK.ckpt"
 starter, ender = torch.cuda.Event(enable_timing=True), torch.cuda.Event(enable_timing=True)
@@ -37,7 +47,7 @@ class PacknedDepthEstimate(Node):
         
         models_path = 'src/packnet_sfm_ros/trained_models/'
         models_name = MODEL_NAME
-        config, state_dict = parse_test_file("/home/fabianfossbudal/repos/master-thesis-mono-repo/rgb-to-depth-converter/src/rgb_to_depth/resource/PackNet01_MR_velsup_CStoK.ckpt")
+        config, state_dict = parse_test_file("~/repos/master-thesis-mono-repo/rgb-to-depth-converter/src/rgb_to_depth/resource/PackNet01_MR_velsup_CStoK.ckpt")
         
         self.set_network_input_shape(config)
 

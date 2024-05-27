@@ -12,6 +12,10 @@ from DistDepth.utils import output_to_depth
 import time
 from sensor_msgs.msg import CameraInfo
 
+"""
+NOTE: This code is partially generated using ChatGPT
+"""
+
 class DepthEstimator(Node):
     def __init__(self):
         super().__init__('distdepth_depth_estimate')
